@@ -21,7 +21,7 @@ function playAudio() {
 }
   stopAudio.play(); 
 
-function timer(timeChoose = 10) {
+function timer(timeChoose = 1000) {
   let sec = 00;
   let min = timeChoose;
   timerInt = setInterval(timerF, 10);
