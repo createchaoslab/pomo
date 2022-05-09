@@ -52,12 +52,8 @@ time1.addEventListener("click", function () {
   startBtn.classList.add("active-btn");
   timeSec.textContent = `00`;
   timeMin.textContent = `20`;
-  startBtn.addEventListener("click", function () {
-    timer(timeChoose);
-    startBtn.setAttribute("disabled", "disabled");
-  });
 });
- 
+
 time2.addEventListener("click", function () {
   clearInterval(timerInt);
   timeChoose = 40;
@@ -69,10 +65,7 @@ time2.addEventListener("click", function () {
   startBtn.classList.add("active-btn");
   timeSec.textContent = `00`;
   timeMin.textContent = `40`;
-  startBtn.addEventListener("click", function () {
-    timer(timeChoose);
-    startBtn.setAttribute("disabled", "disabled");
-  });
+  
 });
 time3.addEventListener("click", function () {
   setTimes.classList.remove("active-time");
@@ -85,10 +78,7 @@ time3.addEventListener("click", function () {
   startBtn.classList.add("active-btn");
   timeSec.textContent = `00`;
   timeMin.textContent = `60`;
-  startBtn.addEventListener("click", function () {
-    timer(timeChoose);
-    startBtn.setAttribute("disabled", "disabled");
-  });
+ 
 });
 shortBreak.addEventListener("click", function () {
   clearInterval(timerInt);
