@@ -21,10 +21,10 @@ function playAudio() {
 }
   stopAudio.play(); 
 
-function timer(timeChoose = 1000) {
+function timer(timeChoose = 10) {
   let sec = 00;
   let min = timeChoose;
-  timerInt = setInterval(timerF, 10);
+  timerInt = setInterval(timerF, 1000);
   function timerF() {
     if (sec === 0) {
       sec = 59;
