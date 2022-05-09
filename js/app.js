@@ -12,10 +12,19 @@ const time2 = document.querySelector(".time2");
 const time3 = document.querySelector(".time3");
 let timerInt;
 let timeChoose;
+
+var startAudio = document.querySelector(".start-audio"); 
+var stopAudio = document.querySelector(".stop-audio"); 
+
+function playAudio() { 
+  startAudio.play(); 
+}
+  stopAudio.play(); 
+
 function timer(timeChoose = 10) {
   let sec = 00;
   let min = timeChoose;
-  timerInt = setInterval(timerF, 1000);
+  timerInt = setInterval(timerF, 10);
   function timerF() {
     if (sec === 0) {
       sec = 59;
@@ -37,9 +46,11 @@ function timer(timeChoose = 10) {
       clearInterval(timerInt);
       timeSec.textContent = `00`;
       timeMin.textContent = `00`;
+      stopAudio.play(); 
     }
   }
 }
+
 
 time1.addEventListener("click", function () {
   clearInterval(timerInt);

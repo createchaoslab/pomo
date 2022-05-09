@@ -19,7 +19,6 @@
 							<div class="time-var time3">60 min</div>
 						</div>
 						<img src="img/clock.svg" alt="" />
-						
 					</div>
         </div>
       </div>
@@ -37,10 +36,16 @@
             <span>:</span>
             <div class="time-sec">00</div>
           </div>
-          <button class="start-btn active-btn">START</button>
+          <button class="start-btn active-btn" onclick="playAudio()">START</button>
         </div>
       </div>
     </div>
+    <audio class="start-audio">
+      <source src="img/start.mp3" type="audio/mpeg">
+    </audio>
+    <audio class="stop-audio">
+      <source src="img/stop.mp3" type="audio/mpeg">
+    </audio>
     <script src="js/app.js"></script>
   </body>
 </html>
